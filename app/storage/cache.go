@@ -133,3 +133,8 @@ func GetCache(key string) string {
 
 	return storage.Value
 }
+
+// Helper to give time in minutes for hours.
+func HoursInMinutes(hours float32) int {
+	return int(60 * hours)
+}
